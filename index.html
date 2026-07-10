@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chicken Road Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🐔 Chicken Road Tracker</h1>
+
+<div class="card">
+
+<h2>💰 Банка</h2>
+
+<h3 id="bank">100.00 €</h3>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Цел</h2>
+
+<h3 id="goal">150.00 €</h3>
+
+</div>
+
+<div class="card">
+
+<h2>📈 Печалба</h2>
+
+<h3 id="profit">0.00 €</h3>
+
+</div>
+
+<div class="buttons">
+
+<button class="lose" onclick="loseBefore1()">
+
+☠️ Изгори преди 1
+
+</button>
+
+<button class="warning" onclick="loseAfter1()">
+
+🔥 Изгори между 1 и 2
+
+</button>
+
+<button class="first" onclick="cashout1()">
+
+🥇 Кеш аут 1
+
+</button>
+
+<button class="second" onclick="cashout2()">
+
+🥈 Кеш аут 2
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Статистика</h2>
+
+<p>☠️ Преди 1:
+<span id="before1">0</span></p>
+
+<p>🔥 Между 1 и 2:
+<span id="after1">0</span></p>
+
+<p>🥇 Кеш аут 1:
+<span id="win1">0</span></p>
+
+<p>🥈 Кеш аут 2:
+<span id="win2">0</span></p>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Последни рундове</h2>
+
+<div id="history">
+
+Все още няма рундове.
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</div>
+
+</body>
+
+</html>
